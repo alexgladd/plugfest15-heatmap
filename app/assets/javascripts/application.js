@@ -220,15 +220,15 @@ function getHeatmapFeatures(url) {
 function setupScenarioLayers() {
     var comms_nodes = comms_nodes_layer();
     var connections = comms_connect_layer();
-    var ew_fans = range_fans_layer();
+    //var ew_fans = range_fans_layer();
 
     // layer-specific setup
     comms_nodes.setRefreshInterval(refreshInterval);
     connections.setOpacity(0.50);
-    ew_fans.setOpacity(0.35);
-    ew_fans.setRefreshInterval(refreshInterval);
+    //ew_fans.setOpacity(0.35);
+    //ew_fans.setRefreshInterval(refreshInterval);
 
-    map.addLayers( [connections, ew_fans, comms_nodes] );
+    map.addLayers( [connections, /*ew_fans,*/ comms_nodes] );
 }
 
 function comms_nodes_layer() {
