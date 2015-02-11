@@ -63,7 +63,7 @@ function init_heatmaps() {
                 }
             },
             "map": map,
-            "opacity": 0.9
+            "opacity": 1.0
         }, "heatLayer");
 
         //0.45: "rgb(000,000,255)",
