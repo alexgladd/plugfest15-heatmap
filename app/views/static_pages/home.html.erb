@@ -1,0 +1,25 @@
+<% provide(:title, 'Heat Map') %>
+<h1>Scenario Heat Map</h1>
+
+<div class="container">
+  <div id="heatmap-area">
+    <!--<div id="uavHeatLayer"></div>-->
+    <!--<div id="bfHeatLayer"></div>-->
+    <!--<div id="civHeatLayer"></div>-->
+    <div id="heatLayer"></div>
+    <div id="map"></div>
+  </div>
+
+  <div id="controls">
+    <h2>Data sources</h2>
+    <form>
+      <input type="checkbox" id="uavDataCk" name="datasources" value="uav" checked="checked" onchange="onUavSourceChange()"> UAV<br>
+      <input type="checkbox" id="bfDataCk" name="datasources" value="bf" checked="checked" onchange="onBfSourceChange()"> BLUFOR<br>
+      <input type="checkbox" id="civDataCk" name="datasources" value="civ" checked="checked" onchange="onCivSourceChanged()"> CIV<br>
+    </form>
+  </div>
+</div>
+
+<script>
+    dojo.ready(init_gismap);
+</script>
