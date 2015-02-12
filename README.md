@@ -28,6 +28,8 @@ application:
 * [ESRI HeatmapLayer](https://github.com/Esri/heatmap-layer-js)
 * [Simtable](http://www.simtable.com/) (used for presentation)
 
+![Final presentation image](app/assets/images/heatmap-simtable.jpg)
+
 ## Team
 
 * Alex Gladd (Lookout)
